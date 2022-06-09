@@ -12,8 +12,8 @@ var array =document.querySelectorAll(".content img");
 array[0].setAttribute("src", imgs1);
 array[1].setAttribute("src", imgs2);
 
-var ms1= p1+" One Win Match ";
-var ms2= p2+" Two Win Match ";
+var ms1= p1+" Win Match ";
+var ms2= p2+" Win Match ";
 if(rn1>rn2)
 {
     // document.querySelectorAll(".guss p")[0].textContent=ms1;
