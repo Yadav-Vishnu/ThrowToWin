@@ -1,0 +1,273 @@
+:root{
+    box-sizing: border-box;
+    font-size: 1.5vw;
+}
+*,::after,::before{
+    box-sizing: inherit;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color:#262626 ;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:stretch;
+    margin: 1vw;
+}
+.hader,.main,.yes,.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: calc(2.5vh); */
+    flex-direction: row;
+
+}
+.hader img{
+    width: 8vw;
+    height:8vw;
+    margin: 1px;
+}
+h1{
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    font-family: 'Permanent Marker', cursive;
+    color: #efefef;
+}
+.left,.right{
+    background-color: #efefef;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 3px 5px 15px #d80ec1;
+}
+.middle{
+    box-shadow: 1px 10px 20px #07b9ff;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px ;
+    position: relative;
+    animation: myfirst 5s 5;
+}
+@keyframes myfirst {
+    0%   { left: 0px; }
+    25%  {  left: -80px; }
+    50%  {  left: 0px; }
+    75%  { left: 80px; }
+    100% { left: 0px; }
+  }
+  
+  p,li{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: whitesmoke;
+    margin-top: 10px;
+    font-size:1rem ;
+  }
+  
+  .main .text{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items:center;
+      margin-top: 10vw;
+
+  }
+  .text img{
+      height: 20vw;
+      width: 20vw;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 8px -12px 10px #ede331;
+  }
+  strong{
+      color: #f20e5a;
+  }
+  
+  .game p{
+      color: #ff513a;
+  }
+ .rule ul{
+      
+      list-style: square;
+  }
+  .main{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items:stretch;
+      margin-top: 5vw;
+  }
+  .game{
+      margin: 0px 1.5vw 0px 1.5vw;
+  }
+  .main .text .game{
+      width: 50%;
+  }
+  .yes{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 8vw;
+  }
+
+  
+ .yes .button{
+   
+     width: 20%;
+     background-color: aquamarine;
+     border-radius: 15px;
+
+ }
+ 
+ .yes .button a{
+     text-decoration: none;
+     color: black;
+     font-size: 1.5rem;
+     padding: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+ }
+
+ 
+
+  .foot img{
+    width: 4vw;
+    height:4vw;
+    margin: 1px;
+    border: 15px;
+  }
+  .foot >div{
+      margin: 8px;
+  }
+  .foot{
+      width: 100%;
+      background-color: aliceblue;
+      justify-content: space-around;
+      margin: 4vw 0px 1vw 0px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 15px;
+  }
+  .guss,.content,.run{
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      width: 100%;
+      margin: 30px 0px 0px 0px ;
+     
+      flex-direction: row;
+  }
+  .content img{
+      width: 6vw;
+      height: 6vw;
+      border-radius: 5vw;
+      
+  }
+  .guss >p{
+      font-size: 1.5rem;
+  }
+  .content .one p,.content .two p{
+    font-size: 1rem;
+}
+  .one,.two{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2vw;
+  }
+  .one >div,.two >div{
+      margin: 30px;
+  }
+  .run input{
+      font-size: 1.5rem;
+      padding: 15px;
+      color: rgb(52, 52, 231);
+      background-color: rgb(243, 169, 182);
+      width: 20%;
+      border-radius: 20px;
+  } 
+  .content p,.run input{
+      cursor: pointer;
+      
+  }
+@media (max-width:800px)
+{
+    .main .text{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        margin-top: 10vw;
+        padding: 10vw;
+  
+    }
+    :root{
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    h1{
+        font-size: 1rem;
+       
+    }
+    .main .text .game{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .yes .button > div{
+        margin: 10px;
+    }
+    .container{
+        margin: 15px 8px 0px 8px;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    @keyframes myfirst {
+        0%   { left: 0px; }
+        25%  {  left: -8px; }
+        50%  {  left: 0px; }
+        75%  { left: 8px; }
+        100% { left: 0px; }
+      }
+      .main .text{
+        
+        margin-top: 0px;
+        
+    }
+    .text img{
+        height: 40vw;
+        width: 40vw;
+       
+    }
+    .yes .button{
+        width: 80%;
+    }
+    h1{
+       padding: 8px 1px 8px 1px;
+    }
+    .guss >p{
+        font-size: 2rem;
+    }
+    .content .one p,.content .two p{
+      font-size: 1.3rem;
+  }
+  .content img{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 5vw;
+}
+.guss,.content,.run{
+    
+    margin: 20vw 0px 0px 0px ;
+   
+    
+}
+.run input{
+  
+    width: 40%;
+    
+}
+}
