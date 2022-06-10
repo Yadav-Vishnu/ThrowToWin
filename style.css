@@ -148,6 +148,7 @@ h1{
       width: 100%;
       background-color: aliceblue;
       justify-content: space-around;
+      align-items: center;
       margin: 4vw 0px 1vw 0px;
       border-top-left-radius: 10px;
       border-top-right-radius: 15px;
