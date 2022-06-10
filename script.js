@@ -47,5 +47,6 @@ function reset() {
   array[0].setAttribute("src","images\\Win.jpg" );
   array[1].setAttribute("src","images\\Win.jpg" );
   document.querySelectorAll(".guss p")[0].textContent="Predict Who Win Match ?";
-
+  p1=undefined;
+  p2=undefined;
 }
